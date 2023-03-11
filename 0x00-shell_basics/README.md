@@ -32,3 +32,22 @@ deletes the directory /tmp/my_first_directory
 
 ##10-back
 changes working directory to the previous one
+
+##11-lists
+lists all files in the current directory, parent directory, parent working directory and in the /boot directory in long format and including hidden files
+
+##12-file_type
+prints file type named iamafile in the /tmp directory
+
+##13-symbolic_link
+
+
+##14-copy_html
+
+
+##100-lets_move
+
+
+##101-clean_emacs
+
+
