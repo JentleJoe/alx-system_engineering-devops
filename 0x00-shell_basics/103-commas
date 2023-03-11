@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1a --group-directories-first | sed 's/\([^\/]\)$/&,/' | sed 's/\//&,/' | LC_COLLATE=C sort -df | sed 's/,$/\n/'
