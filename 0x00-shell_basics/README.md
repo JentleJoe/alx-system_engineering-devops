@@ -10,4 +10,7 @@ lists files and directories
 changes working directory to user's home directory
 
 ##3-listfiles
-list files and directories in long format
+lists files and directories in long format
+
+##4-listmorefiles
+lists files and directories including their hidden files and long format
