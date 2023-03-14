@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Read the input file line by line
+while read line; do
+    # Extract the first letter of each line
+    first_letter=$(echo "$line" | cut -c 1)
+    # Append the first letter to the decoded message
+    decoded_message="$decoded_message$first_letter"
+done < "$1"
+
+# Output the decoded message followed by a newline
+echo "$decoded_message"
+echo
+
