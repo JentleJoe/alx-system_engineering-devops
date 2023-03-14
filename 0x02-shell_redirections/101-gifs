@@ -1,0 +1,10 @@
+#!/bin/bash
+shopt -s globstar nullglob
+for file in **/*.gif; do
+    if [[ -f "$file" ]]; then
+        filename=$(echo "$file" | sed 's/\.gif$//')
+        echo "$filename"
+    fi
+done | LC_ALL=C sort -f
+echo
+
