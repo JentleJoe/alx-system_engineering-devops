@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Read the input file and count the number of requests for each host
+while IFS=$'\t' read -r ip host rest; do
+    ((count["$host"]++))
+done < "$1"
+
+# Output the top 11 hosts or IP addresses by number of requests
+echo "Top 11 Hosts or IP Addresses by Number of Requests:"
+echo "${!count[@]}" | tr ' ' '\n' | sort | uniq -c | sort -rn | head -n 11 | awk '{print $2, $1}'
+
