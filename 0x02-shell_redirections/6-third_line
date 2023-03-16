@@ -1,0 +1,2 @@
+#!/bin/bash
+head -n $(($(wc -l < filename.txt) / 3)) iacta | tail -n +$(($(wc -l < filename.txt) / 3 + 1)))
